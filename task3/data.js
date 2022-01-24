@@ -2,8 +2,8 @@ var ins = document.getElementById("insert");
 var id_arr = [0,1];
 
 for(var i=0;i<arr.length;i++){
-    var show="<div Id="+i+" class='note'><h1>"+arr[i].title+"</h1><p>"+arr[i].content+"</p><button name="+i+" onclick='removeFun(name)' class='delete' >delete</button></div>";
- 
+    var show="<div Id="+i+" class='note'><h1>"+arr[i].title+"</h1><p>"+arr[i].content+"</p><button name="+i+" onclick='removeFun(name)' class='delete' >X</button></div>";
+    //console.log(show);
     ins.insertAdjacentHTML("afterend",show);
 }
 
@@ -26,18 +26,19 @@ btn.onclick = function(){
     }
 
     if(title.length!=0 && note.length!=0){
-        var show="<div id="+idd+" class='note'><h1>"+title+"</h1><p>"+note+"</p><button name="+idd+" onclick='removeFun(name)' class='delete' >delete</button></div>";
+        var show="<div id="+idd+" class='note'><h1>"+title+"</h1><p>"+note+"</p><button name="+idd+" onclick='removeFun(name)' class='delete' >X</button></div>";
         ins.insertAdjacentHTML("afterend",show); 
     } 
     else{
         alert(" Please Enter title and notes");
     }
-    
+    //console.log(show);
 
 }
 
 function removeFun(param){
-   
+    //console.log(param);
+
     var myobf=document.getElementById(param);
     console.log(myobf);
     if(myobf!=null){
@@ -45,7 +46,9 @@ function removeFun(param){
         for(var i=0;i<id_arr.length;i++){
             if(id_arr[i]==param){ id_arr[i]=-1; break;}
         }
-        
+        // for(var i=0;i<id_arr.length;i++){
+        //     console.log(id_arr[i]);
+        // }
     }
 }
 

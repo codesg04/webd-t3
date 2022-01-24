@@ -3,7 +3,7 @@ var id_arr = [0,1];
 
 for(var i=0;i<arr.length;i++){
     var show="<div Id="+i+" class='note'><h1>"+arr[i].title+"</h1><p>"+arr[i].content+"</p><button name="+i+" onclick='removeFun(name)' class='delete' >X</button></div>";
-    //console.log(show);
+   
     ins.insertAdjacentHTML("afterend",show);
 }
 
@@ -32,12 +32,12 @@ btn.onclick = function(){
     else{
         alert(" Please Enter title and notes");
     }
-    //console.log(show);
+   
 
 }
 
 function removeFun(param){
-    //console.log(param);
+    
 
     var myobf=document.getElementById(param);
     console.log(myobf);
@@ -46,21 +46,10 @@ function removeFun(param){
         for(var i=0;i<id_arr.length;i++){
             if(id_arr[i]==param){ id_arr[i]=-1; break;}
         }
-        // for(var i=0;i<id_arr.length;i++){
-        //     console.log(id_arr[i]);
-        // }
+        
     }
 }
 
 
 
 
-// const numArr = [23, 45, 67, 89];
-
-// // remove element 45
-// // at index 1 and
-// // pass 1 as second argument
-// // to tell method to
-// // delete 1 element
-// from the starting index
-// numArr.splice(1, 1);

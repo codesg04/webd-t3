@@ -3,7 +3,6 @@ var id_arr = [0,1];
 
 for(var i=0;i<arr.length;i++){
     var show="<div Id="+i+" class='note'><h1>"+arr[i].title+"</h1><p>"+arr[i].content+"</p><button name="+i+" onclick='removeFun(name)' class='delete' >X</button></div>";
-    //console.log(show);
     ins.insertAdjacentHTML("afterend",show);
 }
 
@@ -32,12 +31,12 @@ btn.onclick = function(){
     else{
         alert(" Please Enter title and notes");
     }
-    //console.log(show);
+  
 
 }
 
 function removeFun(param){
-    //console.log(param);
+   
 
     var myobf=document.getElementById(param);
     console.log(myobf);

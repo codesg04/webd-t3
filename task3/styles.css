@@ -106,7 +106,7 @@ footer p {
     text-align: center;
     right: 15px;
     bottom: 12px;
-    background-color: violet;
+    background-color: rgb(222, 238, 130);
     font-size: 17px;
     border-radius: 50%;
     width: 26px;
@@ -115,7 +115,7 @@ footer p {
 }
 
 .note {
-    background: #fff;
+    background: rgb(214, 68, 92);
     border-radius: 7px;
     box-shadow: 0 2px 5px #ccc;
     padding: 10px;

@@ -1,3 +1,4 @@
+var arr = [];
 var ins = document.getElementById("insert");
 var id_arr = [0,1];
 

@@ -7,7 +7,7 @@ html {
     font-family: "Montserrat", sans-serif;
 }
 body {
-    background: #eee;
+    background: peachpuff;
     padding: 0 16px;
 }
   
@@ -20,7 +20,7 @@ header {
   
 header h1 {
     color: #fff;
-    font-family: "McLaren", cursive;
+    font-family: "McLaren", sans-serif;
     font-weight: 200;
 }
   
@@ -38,7 +38,7 @@ footer p {
 
 .create {
     text-align: center;
-    background: rgb(183, 192, 245);
+    background: palegreen;
     border-radius: 7px;
     box-shadow: 0 2px 5px rgb(255, 242, 242);
     padding: 10px;
@@ -63,7 +63,7 @@ footer p {
     -moz-box-shadow: none;
     box-shadow: none;
 
-    color: rgb(21, 142, 223);
+    color: black;
 }
 
 #title-input {
@@ -83,7 +83,7 @@ footer p {
     -moz-box-shadow: none;
     box-shadow: none;
 
-    color: #be1510;
+    color: black;
 }
 
 #create-note{
@@ -92,12 +92,12 @@ footer p {
     text-align:center;
     right: 15px;
     bottom: -30px;
-    background-color: #c2e209;
+    background-color: blueviolet;
     font-size: 48px;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    border: 2px solid rgb(231, 235, 9);
+    border: 2px solid black;
 }
 
 .delete {
@@ -106,7 +106,7 @@ footer p {
     text-align: center;
     right: 15px;
     bottom: 12px;
-    background-color: #be1510;
+    background-color: violet;
     font-size: 17px;
     border-radius: 50%;
     width: 26px;
@@ -139,5 +139,6 @@ footer p {
     white-space: pre-wrap;
     word-wrap: break-word;
 
-    color:  rgb(21, 142, 223);
+    color:  black;
 }
+  

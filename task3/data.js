@@ -30,7 +30,7 @@ btn.onclick = function(){
         ins.insertAdjacentHTML("afterend",show); 
     } 
     else{
-        alert(" Please Enter title and notes");
+        alert(" Write something first");
     }
   
 

@@ -2,7 +2,7 @@ var ins = document.getElementById("insert");
 var id_arr = [0,1];
 
 for(var i=0;i<arr.length;i++){
-    var show="<div Id="+i+" class='note'><h1>"+arr[i].title+"</h1><p>"+arr[i].content+"</p><button name="+i+" onclick='removeFun(name)' class='delete' >X</button></div>";
+    var show="<div Id="+i+" class='note'><h1>"+arr[i].title+"</h1><p>"+arr[i].content+"</p><button name="+i+" onclick='removeFun(name)' class='delete' >delete</button></div>";
  
     ins.insertAdjacentHTML("afterend",show);
 }
